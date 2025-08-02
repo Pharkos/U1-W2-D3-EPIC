@@ -125,9 +125,13 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 const femaleCharacters = [];
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  const genders = starWarsCharacters[i].gender;
+  let allGenders = starWarsCharacters[i];
 
-  console.log(genders);
+  console.log(allGenders);
+
+  if (allGenders.gender === "female") {
+    femaleCharacters.push(allGenders);
+  }
 }
 
 /* ESERCIZIO 4
