@@ -215,3 +215,16 @@ deleteFemaleNamesFromArray();
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+
+console.log(starWarsCharacters.length);
+
+const randomCharecter = function () {
+  const index = Math.floor(Math.random() * starWarsCharacters.length);
+  console.log(index);
+
+  console.log(
+    `Hello My Name Is ${starWarsCharacters[index].name} I Am ${starWarsCharacters[index].gender}  , and i don't Like to talk about me a lot`
+  );
+};
+
+randomCharecter();
